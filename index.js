@@ -24,6 +24,7 @@ async function main() {
 
     while (true) {
         const bumping = await bump({
+            rpc: process.env.RPC,
             signer: PRIVATE_KEY,
             mint: TOKEN_ADDRESS,
             buy_amount: BUY_AMOUNT
